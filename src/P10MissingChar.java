@@ -23,6 +23,11 @@ public class P10MissingChar {
     static P10MissingChar missingChar;
 
 
+// here the concept is...we have to remove a character from string ...so what we can do is create a frist substring till that character then skip that character ..n then create another substring from chracter that is next to character we removed
+
+    // for first substring we going to character we remvoe..see substring method takes 1 character extra ..means it prints 1 less character ..so we going till n ..its not gonna print n (it will print character before n ..so we got first sub string
+    // then for second we going from n+1 /...so we sucessfully skipped n character ...
+
 
     public String missingChar(String str, int n) {
 
