@@ -54,6 +54,7 @@ public class P10MissingChar {
 
     //  see...when getting multiple string inputs from scanner ...nextLine() method was just taking input first time n prossed it ..n then going to next line ...n skipping taking 2nd n 3rd input from output2 n output3  methods...
     //  so now i replace it with next() method..n its working completely fine n taking multiple String input one by one..
+// nextLine() method works fine ..if you getting String input from scanner just once..
 
     public static void main(String[] args) {
 
