@@ -60,6 +60,7 @@ public class P10MissingChar {
     //  see...when getting multiple string inputs from scanner ...nextLine() method was just taking input first time n prossed it ..n then going to next line ...n skipping taking 2nd n 3rd input from output2 n output3  methods...
     //  so now i replace it with next() method..n its working completely fine n taking multiple String input one by one..
 // nextLine() method works fine ..if you getting String input from scanner just once..
+    // 1 thing readline() method take stuff from whole line...if you write like this ...    hello 2  5 dogi ...it will take all of  them as string but..next method will only take hello from the line..
 
     public static void main(String[] args) {
 
@@ -71,7 +72,7 @@ public class P10MissingChar {
         missingChar.Inputing();
 
         // it was throughing a inputMismatch exception ( when using scanner it may come )..so  pu the try n catch ..where i was getting input from scanner  see below i put the code to get in put n passing it to output method.
-        try {
+        try {   //i guess it was giving exception due to readLine() method of scanner.. that i replace lately
 
             missingChar.output(sc.next(), sc.nextInt());  // why i choose sc.next() method insteal of nextLine() ..see above method for description
 
